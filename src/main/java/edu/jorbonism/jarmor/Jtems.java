@@ -2,6 +2,7 @@ package edu.jorbonism.jarmor;
 
 import edu.jorbonism.jarmor.extensions.JArmorItem;
 import edu.jorbonism.jarmor.extensions.JArmorMaterials;
+import edu.jorbonism.jarmor.extensions.JDyeableArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -18,11 +19,11 @@ public class Jtems {
 	public static final Item GOLD_SCALE = new Item((new Item.Settings()).group(ItemGroup.MATERIALS));
 	public static final Item DAEDRA_HEART = new Item((new Item.Settings()).group(ItemGroup.MATERIALS));
 	
-
-	public static final Item STUDDED_LEATHER_HELMET = new JArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.HEAD, (new Item.Settings()).group(ItemGroup.COMBAT));
-	public static final Item STUDDED_LEATHER_CHESTPLATE = new JArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT));
-	public static final Item STUDDED_LEATHER_LEGGINGS = new JArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.LEGS, (new Item.Settings()).group(ItemGroup.COMBAT));
-	public static final Item STUDDED_LEATHER_BOOTS = new JArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.FEET, (new Item.Settings()).group(ItemGroup.COMBAT));
+	
+	public static final Item STUDDED_LEATHER_HELMET = new JDyeableArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.HEAD, (new Item.Settings()).group(ItemGroup.COMBAT));
+	public static final Item STUDDED_LEATHER_CHESTPLATE = new JDyeableArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT));
+	public static final Item STUDDED_LEATHER_LEGGINGS = new JDyeableArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.LEGS, (new Item.Settings()).group(ItemGroup.COMBAT));
+	public static final Item STUDDED_LEATHER_BOOTS = new JDyeableArmorItem(JArmorMaterials.STUDDED_LEATHER, EquipmentSlot.FEET, (new Item.Settings()).group(ItemGroup.COMBAT));
 
 	public static final Item HIDE_HELMET = new JArmorItem(JArmorMaterials.HIDE, EquipmentSlot.HEAD, (new Item.Settings()).group(ItemGroup.COMBAT));
 	public static final Item HIDE_CHESTPLATE = new JArmorItem(JArmorMaterials.HIDE, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT));
