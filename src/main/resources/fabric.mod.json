@@ -19,7 +19,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-		"edu.jorbonism.jarmor.Initialize"
+		"edu.jorbonism.jarmor.Jarmor"
 		]
 	},
 	"mixins": [

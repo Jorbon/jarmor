@@ -4,7 +4,8 @@
 	"package": "edu.jorbonism.jarmor.mixin",
 	"compatibilityLevel": "JAVA_16",
 	"mixins": [
-		"ExampleMixin"
+		"ItemsMixin",
+		"PiglinBrainMixin"
 	],
 	"client": [
 		
