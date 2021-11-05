@@ -55,6 +55,7 @@ public class Jtems {
 	public static final Item DRAGON_SCALE_CHESTPLATE = new JArmorItem(JArmorMaterials.DRAGON_SCALE, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
 	public static final Item DRAGON_SCALE_LEGGINGS = new JArmorItem(JArmorMaterials.DRAGON_SCALE, EquipmentSlot.LEGS, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
 	public static final Item DRAGON_SCALE_BOOTS = new JArmorItem(JArmorMaterials.DRAGON_SCALE, EquipmentSlot.FEET, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
+
 	public static final Item DRAGON_SCALE_SHIELD = new ShieldItem((new Item.Settings()).maxDamage(90).group(ItemGroup.COMBAT).fireproof());
 
 	public static final Item NETHERITE_SHIELD = new ShieldItem((new Item.Settings()).maxDamage(90).group(ItemGroup.COMBAT).fireproof());
@@ -73,11 +74,13 @@ public class Jtems {
 	public static final Item MITHRIL_CHESTPLATE = new JArmorItem(JArmorMaterials.MITHRIL_PLATE, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT));
 	public static final Item MITHRIL_LEGGINGS = new JArmorItem(JArmorMaterials.MITHRIL_PLATE, EquipmentSlot.LEGS, (new Item.Settings()).group(ItemGroup.COMBAT));
 	public static final Item MITHRIL_BOOTS = new JArmorItem(JArmorMaterials.MITHRIL_PLATE, EquipmentSlot.FEET, (new Item.Settings()).group(ItemGroup.COMBAT));
+
 	public static final Item MITHRIL_SHIELD = new ShieldItem((new Item.Settings()).maxDamage(90).group(ItemGroup.COMBAT));
 
 	public static final Item DAEDRIC_HELMET = new JArmorItem(JArmorMaterials.DAEDRIC, EquipmentSlot.HEAD, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
 	public static final Item DAEDRIC_CHESTPLATE = new JArmorItem(JArmorMaterials.DAEDRIC, EquipmentSlot.CHEST, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
 	public static final Item DAEDRIC_LEGGINGS = new JArmorItem(JArmorMaterials.DAEDRIC, EquipmentSlot.LEGS, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
 	public static final Item DAEDRIC_BOOTS = new JArmorItem(JArmorMaterials.DAEDRIC, EquipmentSlot.FEET, (new Item.Settings()).group(ItemGroup.COMBAT).fireproof());
+	
 	public static final Item DAEDRIC_SHIELD = new ShieldItem((new Item.Settings()).maxDamage(90).group(ItemGroup.COMBAT).fireproof());
 }

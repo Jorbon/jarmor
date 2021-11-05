@@ -6,13 +6,14 @@ import net.minecraft.util.registry.Registry;
 
 /*
 TO DO:
-temp resource pack stuff
-fix shields not taking damage
-effects of weight
+LivingEntity and PlayerEntity mixins to standardize shield behavior
+implement effects of weight
 make shields count as armor
-resource pack stuff
 crafting recipes
 loot tables
+make shield models work
+nice textures
+nice sounds
 */
 
 public class Jarmor implements ModInitializer {
