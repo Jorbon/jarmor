@@ -6,13 +6,22 @@ import net.minecraft.util.registry.Registry;
 
 /*
 TO DO:
-BuiltinModelItemRenderer shield model fix
-LivingEntity and PlayerEntity mixins to standardize shield behavior
 implement effects of weight
+	hunger penalties curve
+	movement speed curve
+		walking
+		sprinting
+		swimming
+	kb resist
+	rocket boosting
+	sneaking nameplate
+	sinking speed in fluids
+	
+fix shield models (BuiltinModelItemRenderer)
+LivingEntity and PlayerEntity mixins to standardize shield behavior
 make shields count as armor
 crafting recipes
 loot tables
-make shield models work
 nice textures
 nice sounds
 */
@@ -20,6 +29,7 @@ nice sounds
 public class Jarmor implements ModInitializer {
 
 	public static final String MODID = "jarmor";
+	public static final double KB_RESIST_PER_WEIGHT = 0.002;
 
 	@Override
 	public void onInitialize() {

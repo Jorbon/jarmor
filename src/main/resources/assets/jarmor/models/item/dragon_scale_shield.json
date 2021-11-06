@@ -46,7 +46,7 @@
             "predicate": {
                 "blocking": 1
             },
-            "model": "item/dragon_scale_shield_blocking"
+            "model": "jarmor:item/dragon_scale_shield_blocking"
         }
     ]
 }

@@ -46,7 +46,7 @@
             "predicate": {
                 "blocking": 1
             },
-            "model": "item/mithril_shield_blocking"
+            "model": "jarmor:item/mithril_shield_blocking"
         }
     ]
 }

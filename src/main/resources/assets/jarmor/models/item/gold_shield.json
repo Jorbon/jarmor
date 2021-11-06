@@ -46,7 +46,7 @@
             "predicate": {
                 "blocking": 1
             },
-            "model": "item/gold_shield_blocking"
+            "model": "jarmor:item/gold_shield_blocking"
         }
     ]
 }

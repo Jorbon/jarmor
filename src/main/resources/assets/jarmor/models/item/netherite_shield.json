@@ -46,7 +46,7 @@
             "predicate": {
                 "blocking": 1
             },
-            "model": "item/netherite_shield_blocking"
+            "model": "jarmor:item/netherite_shield_blocking"
         }
     ]
 }
