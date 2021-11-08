@@ -20,14 +20,14 @@ public enum JArmorMaterials implements JArmorMaterial {
 	MITHRIL_CHAIN("mithril_chain", 27, new int[]{2, 4, 6, 2, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1f, new int[]{0, 0, 0, 0, 0}, () -> { return Ingredient.ofItems(Jtems.MITHRIL_CHAIN); }),
 	MITHRIL_SCALE("mithril_scale", 30, new int[]{2, 5, 6, 3, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, new int[]{0, 0, 0, 0, 0}, () -> { return Ingredient.ofItems(Jtems.MITHRIL_SCALE); }),
 	MITHRIL_PLATE("mithril_plate", 33, new int[]{2, 6, 7, 3, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3f, new int[]{0, 0, 0, 0, 0}, () -> { return Ingredient.ofItems(Jtems.MITHRIL_INGOT); }),
-	IRON_CHAIN("iron_chain", 14, new int[]{2, 4, 6, 2, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1f, new int[]{18, 32, 50, 20, 60}, () -> { return Ingredient.ofItems(Jtems.IRON_CHAIN); }),
-	IRON_SCALE("iron_scale", 17, new int[]{2, 5, 6, 3, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2f, new int[]{20, 50, 60, 30, 60}, () -> { return Ingredient.ofItems(Jtems.IRON_SCALE); }),
-	IRON_PLATE("iron_plate", 20, new int[]{2, 6, 7, 3, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3f, new int[]{23, 60, 82, 35}, () -> { return Ingredient.ofItems(Items.IRON_INGOT); }),
+	IRON_CHAIN("iron_chain", 14, new int[]{2, 4, 6, 2, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.5f, new int[]{18, 42, 60, 20, 60}, () -> { return Ingredient.ofItems(Jtems.IRON_CHAIN); }),
+	IRON_SCALE("iron_scale", 17, new int[]{2, 5, 6, 3, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 1f, new int[]{20, 52, 68, 30, 60}, () -> { return Ingredient.ofItems(Jtems.IRON_SCALE); }),
+	IRON_PLATE("iron_plate", 20, new int[]{2, 6, 7, 3, 4}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, new int[]{22, 62, 80, 36, 60}, () -> { return Ingredient.ofItems(Items.IRON_INGOT); }),
 	GOLD_CHAIN("gold_chain", 5, new int[]{1, 2, 4, 1, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, new int[]{20, 55, 80, 25, 100}, () -> { return Ingredient.ofItems(Jtems.GOLD_CHAIN); }),
 	GOLD_SCALE("gold_scale", 9, new int[]{1, 3, 4, 1, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, new int[]{30, 75, 110, 35, 100}, () -> { return Ingredient.ofItems(Jtems.GOLD_SCALE); }),
 	GOLD_PLATE("gold_plate", 7, new int[]{1, 3, 5, 2, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0f, new int[]{40, 85, 125, 50, 100}, () -> { return Ingredient.ofItems(Items.GOLD_INGOT); }),
 	NETHERITE("netherite", 37, new int[]{3, 6, 8, 3, 5}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3f, new int[]{27, 54, 72, 27, 60}, () -> { return Ingredient.ofItems(Items.NETHERITE_INGOT); }),
-	DAEDRIC("daedric", 60, new int[]{3, 7, 10, 4, 6}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 6f, new int[]{40, 85, 125, 50, 100}, () -> { return Ingredient.ofItems(Jtems.DAEDRA_HEART); }),
+	DAEDRIC("daedric", 72, new int[]{3, 7, 10, 4, 6}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 6f, new int[]{40, 85, 125, 50, 100}, () -> { return Ingredient.ofItems(Jtems.DAEDRA_HEART); }),
 	TURTLE("turtle", 25, new int[]{2, 5, 6, 2, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 0f, new int[]{10, 20, 16, 6, 16}, () -> { return Ingredient.ofItems(Items.SCUTE); });
 
 	private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

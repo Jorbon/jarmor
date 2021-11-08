@@ -1,16 +1,20 @@
 package edu.jorbonism.jarmor.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import edu.jorbonism.jarmor.Jarmor;
 import edu.jorbonism.jarmor.extensions.JEntityAttributes;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
+import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -30,4 +34,10 @@ public abstract class LivingEntityMixin extends Entity {
 		
 	}
 
+	@ModifyVariable(method = "takeKnockback(DDD)V", at = @At("HEAD"), ordinal = 0)
+	public double knockbackModifier(double strength) {
+		return strength * (1.0D - Jarmor.getKBResist(getAttributeValue(JEntityAttributes.GENERIC_ENCUMBRANCE)));
+	}
+
+	@Shadow double getAttributeValue(EntityAttribute attribute) { return 0; }
 }

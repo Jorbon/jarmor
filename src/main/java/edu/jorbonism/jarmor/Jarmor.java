@@ -12,7 +12,6 @@ implement effects of weight
 		walking
 		sprinting
 		swimming
-	kb resist
 	rocket boosting
 	sneaking nameplate
 	sinking speed in fluids
@@ -30,6 +29,28 @@ public class Jarmor implements ModInitializer {
 
 	public static final String MODID = "jarmor";
 	public static final double KB_RESIST_PER_WEIGHT = 0.002;
+	public static final double WEIGHT_FULL_SPEED = 100;
+	public static final double WEIGHT_HALF_SPEED = 300;
+	public static final double WEIGHT_MAX_EXHAUSTION = 300;
+	public static final double MAX_EXHAUSTION = 1.5;
+	public static final double MIN_EXHAUSTION = 0.5;
+
+
+	public static double getKBResist(double weight) {
+		return weight * KB_RESIST_PER_WEIGHT;
+	}
+
+	public static double getSpeedMultiplier(double weight) {
+		if (weight <= WEIGHT_FULL_SPEED) return 1;
+		return 1 - (weight - WEIGHT_FULL_SPEED) / (weight - 2*WEIGHT_FULL_SPEED + WEIGHT_HALF_SPEED);
+	}
+
+	public static double getExhaustionMultiplier(double weight) {
+		if (weight >= WEIGHT_MAX_EXHAUSTION) return MAX_EXHAUSTION;
+		double a = weight / WEIGHT_MAX_EXHAUSTION - 1;
+		return MAX_EXHAUSTION + (MIN_EXHAUSTION - MAX_EXHAUSTION) * a*a;
+	}
+
 
 	@Override
 	public void onInitialize() {
